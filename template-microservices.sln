@@ -3,9 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "EventBus\EventBus.csproj", "{90989D0A-BFAA-4DC6-B387-E3C7B5540651}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{75FF6AA2-3316-4783-A14A-1FBC68A8688A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{EC49A0EC-918C-436A-A470-EA8F25DFBE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{5D8D0363-D05C-4DF8-9713-CCE796B3B847}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90989D0A-BFAA-4DC6-B387-E3C7B5540651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90989D0A-BFAA-4DC6-B387-E3C7B5540651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90989D0A-BFAA-4DC6-B387-E3C7B5540651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90989D0A-BFAA-4DC6-B387-E3C7B5540651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8D0363-D05C-4DF8-9713-CCE796B3B847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8D0363-D05C-4DF8-9713-CCE796B3B847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8D0363-D05C-4DF8-9713-CCE796B3B847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8D0363-D05C-4DF8-9713-CCE796B3B847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90989D0A-BFAA-4DC6-B387-E3C7B5540651} = {EC49A0EC-918C-436A-A470-EA8F25DFBE9D}
+		{EC49A0EC-918C-436A-A470-EA8F25DFBE9D} = {75FF6AA2-3316-4783-A14A-1FBC68A8688A}
+		{5D8D0363-D05C-4DF8-9713-CCE796B3B847} = {EC49A0EC-918C-436A-A470-EA8F25DFBE9D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3085BEC4-86FF-4CC8-9589-AF04E005A916}
